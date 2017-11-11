@@ -197,7 +197,7 @@ and open the template in the editor.
                                                     <td ng-show="visibles.id"><b>{{obj.id}}</b></td>
                                                     <td ng-show="visibles.fecha"><b>{{obj.fecha}}</b></td>
                                                     <td ng-show="visibles.iva">{{obj.iva}}</td>
-                                                    <td ng-show="visibles.tiene_iva">{{obj.tiene_iva}}</td>
+                                                    <td ng-show="visibles.tiene_iva" ng-bind-html="obj.tiene_iva|booleanizate" class="text-center"></td>
                                                     
                                                     <td ng-show="visibles.id_usuario"><a href="usuario/{{profile}}/view/{{obj.obj_usuario.id}}">{{obj.obj_usuario.nombre}}</a></td>
                                                     <td>

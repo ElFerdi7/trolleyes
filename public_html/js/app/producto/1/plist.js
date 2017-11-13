@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+
 'use strict';
 moduloProducto.controller('ProductoPList1Controller',
         ['$scope', '$routeParams', '$location', 'serverCallService', 'toolService', 'constantService',
@@ -42,7 +43,6 @@ moduloProducto.controller('ProductoPList1Controller',
                 $scope.visibles.existencias = true;
                 $scope.visibles.precio = true;
                 $scope.visibles.descripcion = true;
-              
                
                 //---
                 function getDataFromServer() {
